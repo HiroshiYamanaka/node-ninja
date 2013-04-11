@@ -1,6 +1,6 @@
 $(function(io, $) {
 
-var socket = io.connect('http://192.168.11.4:3000/chat'),
+var socket = io.connect('http://homunculus.c.node-ninja.com:3000/chat'),
 btnFrame = $("#btn-container .frame"),
 msgList = $("#msg"),
 $COLOR_CODE = ["#cccccc", "#ff0000", "#660066", "#3300cc", "#336600", "#33cc00", "#ffff00", "#ff6600", "#000000"],
