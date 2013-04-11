@@ -30,8 +30,17 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', routes.index);
-app.get('/users', user.list);
+app.get('/controller', routes.controller);
+app.get('/flash', routes.flash);
 
-http.createServer(app).listen(app.get('port'), function(){
+var server = http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
 });
+
+/* Socket.IO */
+var io = require('socket.io').listen(server);
+app.set('io', io);
+app.set('net', net);
+
+/* For /socket-io-chat */
+require('./apps/socketIoDemo');

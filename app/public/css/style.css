@@ -1,0 +1,65 @@
+/* reset
+--------------------*/
+html, body, h1, h2, h3, h4, h5, h6, p, span, div, table, tr, th, td,
+a, ul, li, ol, input, textarea
+{
+	margin: 0;
+	padding: 0;
+}
+ul {
+	list-style: none;
+}
+input {}
+/* base
+--------------------*/
+html, body {
+	height: 100%;
+	width: 100%;
+}
+body {
+	font: 13px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+/* msg-container
+--------------------*/
+#msg {
+	font-size: 16px;
+	height: 50px;
+	line-height: 50px;
+	overflow: auto;
+	width: 320px;
+}
+
+/* btn-container
+--------------------*/
+#btn-container {
+	overflow: hidden;
+	width: 320px;
+}
+
+#btn-container .frame {
+	width: 330px;
+}
+
+#btn-container .btn {
+	color: #fff;
+	cursor: pointer;
+	float: left;
+	font-size:20px;
+	height:100px;
+	line-height: 100px;
+	text-align: center;
+	margin: 0 10px 5px 0;
+	width:100px;
+}
+
+
+
+/* stamp
+--------------------*/
+.stamp {
+	float: left;
+	height: 200px;
+	margin: 0 10px 10px 0;
+	width: 200px;
+}
